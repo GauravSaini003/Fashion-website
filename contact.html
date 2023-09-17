@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Style Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/47c611b96c.js"></script>
+    <script src="functions.js" defer></script>
+  </head>
+  <body class="font-serif">
+    <header
+      class="z-20 border-b-2 border-gray-300 shadow-xl sticky inset-y-0 inset-x-0 w-full bg-slate-200 flex items-center justify-between px-4
+       md:px-12 h-24 relative fixed top-0 left-0"
+    >
+      <a href="#"><img class="h-10" src="img\logo.png" alt="logo" /></a>
+      <nav>
+        <!-- Button to toggle the navigation list on smaller screens -->
+<button class="md:hidden" id="toggleBtn">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+</button>
+
+
+<!-- Navigation list -->
+
+<ul class="fixed left-0 right-0 top-0 min-h-screen space-y-4 p-4 transform translate-x-full bg-white 
+md:relative md:flex md:translate-x-0 md:space-y-0 md:min-h-0 md:bg-transparent" id="navList">
+ 
+    <!-- Button to close the navigation list -->
+<button class="md:hidden hidden" id="closeBtn">
+  <i class="fa fa-times" aria-hidden="true"></i>
+</button>
+
+  <li  class=" mx-2 text-lg active:text-green-700 font-semibold hover:underline">
+    <a href="index.html">Home</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="shop.html">Shop</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="blog.html">Blog</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="about.html">About</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="contact.html">Contact</a>
+  </li>
+  <li class="mx-2  hover:underline active:underline">
+    <a href="cart.html">
+      <div class="  relative" >
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="-top-3 inset-x-4 absolute text-red-600"><h1>3</h1></div>
+       </div>
+    </a>
+ 
+  </li>
+</ul>
+   
+      </nav>
+    </header>
+   
+    <section class="bg-right bg-[url('img/about/banner.png')] md:bg-cover mb-10  ">
+        <div class="flex flex-col items-center justify-center p-24"> 
+          <h1 class="text-3xl md:text-6xl font-bold text-white  pb-3">#let's_talk</h1>  
+         <h6 class=" text-lg  md:text-xl text-gray-500">LEAVE A MESSAGE.We love to hear from you!</h6>
+      </div>
+      </section>
+      
+ <section>
+    <div class="flex flex-col items-center justify-center  m-4 md:m-12 md:flex md:flex-row">
+    <div class="mt-4 p-3">
+        <h6 class="text-gray-500">GET IN TOUCH</h6>
+        <h1 class="mt-4 text-2xl md:text-4xl font-bold">Visit one of our agency locations or contact us today </h1>
+        <h5 class=" mt-4 font-bold">Head office</h5> <br>
+        
+        <span class=" text-gray-500"><i class="fa-sharp fa-solid fa-location-dot"></i> <span class="ml-4"></span> Lakkhi Bagh, Dehradun, Uttarakhand 248001</span><br><br>
+   <span class="text-gray-500"><i class="fa-solid fa-envelope"><span class="ml-4"></span> </i>contact@example.com</span><br><br>
+   <span class="text-gray-500"><i class="fa-solid fa-phone"><span class="ml-4"></span> </i>+918283856785 ,+918194375689</span> <br><br>
+   <span class="text-gray-500"><i class="fa-solid fa-clock"><span class="ml-4"></span> </i>Monday to saturday</span><br>
+</div>  
+
+    <div class="h-full w-full mt-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.4108261747688!2d78.0318676752854!3d30.310830205900785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909299a4683aae7%3A0xfd672f27fad57ab9!2sRailway%20Sta%20Rd%2C%20Govind%20Nagar%2C%20Lakkhi%20Bagh%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1694757495550!5m2!1sen!2sin"
+          style="border:0;" width="100%" height="480px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        </section>
+        <section>
+            <div class="border-2 border-gray-300 drop-shadow-2xl flex flex-col items-center justify-center md:m-12 md:space-x-12 md:flex md:flex-row">
+            <div  class="flex flex-col">
+                <form action="Details_form">
+                    <h6 class="text-gray-500">LEAVE A MESSAGE</h6>
+                    <h1 class="text-2xl md:text-4xl font-bold">We love to hear your answer</h1>
+                    
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                                <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.293 7.293a1 1 0 011.414-1.414L10 12.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <input class="form-input block w-full pl-10 sm:text-sm sm:leading-5 border-gray-300 rounded-md" type="text" name="name" id="name" placeholder="Your name">
+                        </div>
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                                <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.293 7.293a1 1 0 011.414-1.414L10 12.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <input class="form-input block w-full pl-10 sm:text-sm sm:leading-5 border-gray-300 rounded-md" type="email" name="mail" id="E-mail" placeholder="xyz@gmail.com">
+                        </div>
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                                <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.293 7.293a1 1 0 011.414-1.414L10 12.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <input class="form-input block w-full pl-10 sm:text-sm sm:leading-5 border-gray-300 rounded-md" type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                                <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.293 7.293a1 1 0 011.414-1.414L10 12.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <textarea class="form-textarea block w-full pl-10 sm:text-sm sm:leading-5 border-gray-300 rounded-md" name="message" rows="4" id="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+        
+                    <div class="mb-6">
+                        <button type="submit" class="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-800 transition duration-150 ease-in-out">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <!--This  the form code for simple form design-->
+<!-- <form action="Deatails_form">
+    <h6 class="text-gray-500">LEAVE A MESSAGE</h6>
+    <h1 class="text-2xl md:text-4xl font-bold">We love to hear your answer</h1>
+    <label for="name"></label>
+    <input class="border-2 border-gray-300" type="text" name="name" id="name" placeholder="Your name"><br><br>
+<label for="email"></label>
+<input class="border-2 border-gray-300" type="email" name="mail" id="E-mail" placeholder="xyz@gmail.com" ><br><br>
+<input class="border-2 border-gray-300" type="text" name="subject" id="subject" placeholder="Subject"><br><br>
+<textarea class="border-2 border-gray-400" name="message" rows="4" cols="40" id="sub" ></textarea><br><br>
+</form> -->
+</div>
+<div class="flex flex-col space-y-10 md:p-24">
+    <div class="flex ">
+    <div>
+    <img src="img/people/1.png" alt="team_member"> 
+</div>
+<div>
+    <h1>john Doe</h1>
+    <h4>Regional Manager</h4>
+    <h5>Phone: +000123 000 77 88</h5>
+    <h5>Email:contact@gmail.com</h5>
+</div>
+</div>
+<div class="flex">
+    <div>
+    <img src="img/people/2.png" alt="team_member"> 
+</div>
+<div>
+    <h1>William Smit</h1>
+    <h4> Senior Marketing Manager</h4>
+    <h5>Phone: +000123 000 77 88</h5>
+    <h5>Email:contact@gmail.com</h5>
+</div>
+</div>
+<div class="flex">
+    <div>
+    <img src="img/people/3.png" alt="team_member"> 
+</div>
+<div>
+    <h1>Emma Stone</h1>
+    <h4>Sales Manager</h4>
+    <h5>Phone: +000123 000 77 88</h5>
+    <h5>Email:contact@gmail.com</h5>
+</div>
+</div>
+    
+</div>
+</div>
+
+        </section>
+      
+
+
+ 
+ <section class="bg-blue-950  bg-[url('img/banner/b14.jpg')] ">
+  <div class=" m-12 p-16  md:p-24   md:flex md:flex-row md:justify-between md:items-center flex flex-col  justify-center items-center">
+  <div class="mb-6">
+    <h3 class="text-4xl mb-3 text-white font-bold">Sign Up For Newsletters</h3>
+    <p class="text-xl text-gray-400">Get E-mail updates about our latest shop and <span class="text-orange-400">special offer</span></p>
+  </div>
+  <div class="flex flex-row" >
+    
+    <input class="border-none p-3 " type="email" name="mail" id="eamil" placeholder="xyz@gmail.com">
+    <button class="p-3   text-white  bg-green-400  rounded-r-lg"><a href="#">Sign Up</a></button>
+  
+  </div>
+</div>
+ </section>
+ <footer>
+  <div  class="flex flex-row justify-between m-3 md:m-12 flex-wrap">
+  <div class="flex flex-col">
+    <a class="mb-6" href="#"><img src="img/logo.png" alt="logo"></a>
+    <h1 class="font-bold ">Contact</h1>
+    <h6 class="font-semi-bold">Address: <span class="text-gray-400"> Lakkhi Bagh, Dehradun, Uttarakhand 248001</span></h6>
+    <h6  class="font-semi-bold">Phone: <span class="text-gray-400">+916397108037/(+9181262448365)</span></h6>
+    <h6 class="font-semi-bold">Hours: <span class="text-gray-400">10:00 - 18:00 Mon-Sat</span></h6>
+    <h5  class="font-semi-bold">Follows Us</h5>
+    <div class="flex flex-row space-x-2">
+      <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="flex flex-col ">
+   <h6 class="font-bold mb-6 " >About</h6>
+   <a class="text-gray-400" href="">About Us </A></a>
+   <a class="text-gray-400" href=""> Delievery Information</a>
+   <a class="text-gray-400" href="">Privacy policy</a>
+   <a class="text-gray-400" href="">Terms & Coditions</a>
+   <a class="text-gray-400" href=""> Contact Us</a>
+  </div>
+  <div class="flex flex-col">
+   <h6 class="font-bold mb-6 ">My Account</h6>
+   <a class="text-gray-400" href="">sign In </A></a>
+   <a class="text-gray-400" href="">View Cart</a>
+   <a class="text-gray-400"  href="">My Whislist</a>
+   <a class="text-gray-400" href="">Track My Order</a>
+   <a class="text-gray-400" href=""> Help</a>
+  </div>
+  <div class="flex flex-col">
+   <h6 class="font-bold mb-6 ">Install App</h6>
+   <h6>From App Store Google play</h6>
+   <div class="flex ">
+   <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/app.jpg" alt="App store"> </a>
+   <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/play.jpg" alt="Play store"> </a>
+  </div>
+  <h6 class="mt-3" >Secured Payment GateWays</h6>
+   <a class="mt-3" href=""><img src="img/pay/pay.png" alt=""></a>
+   
+  </div>
+  
+</div>
+<div class="flex items-center justify-center"><h6>© 2023 The Clean Style - Ecoomerce Website </h6></div>
+</footer>
+   
+  </body>
+</html>

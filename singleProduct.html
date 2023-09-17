@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Style Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/47c611b96c.js"></script>
+    <script src="functions.js" defer></script>
+  </head>
+<body class="font-serif">
+    <header
+      class="border-b-2 border-gray-300 shadow-xl sticky inset-y-0 inset-x-0 w-full bg-slate-200 flex items-center justify-between px-4
+       md:px-12 h-24 relative fixed top-0 left-0"
+    >
+      <a href="#"><img class="h-10" src="img\logo.png" alt="logo" /></a>
+      <nav>
+        <!-- Button to toggle the navigation list on smaller screens -->
+<button class="md:hidden" id="toggleBtn">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+</button>
+
+
+<!-- Navigation list -->
+
+<ul class="fixed left-0 right-0 top-0 min-h-screen space-y-4 p-4 transform translate-x-full bg-white 
+md:relative md:flex md:translate-x-0 md:space-y-0 md:min-h-0 md:bg-transparent" id="navList">
+ 
+    <!-- Button to close the navigation list -->
+<button class="md:hidden hidden" id="closeBtn">
+  <i class="fa fa-times" aria-hidden="true"></i>
+</button>
+
+  <li class="mx-2 text-lg font-semibold active:text-green-700">
+    <a href="index.html">Home</a>
+  </li>
+  <li class="mx-2 text-lg font-semibold hover:underline active:text-green-700">
+    <a href="shop.html">Shop</a>
+  </li>
+  <li class="mx-2 text-lg font-semibold hover:underline active:text-green-700">
+    <a href="blog.html">Blog</a>
+  </li>
+  <li class="mx-2 text-lg font-semibold hover:underline active:text-green-700">
+    <a href="about.html">About</a>
+  </li>
+  <li class="mx-2 text-lg font-semibold hover:underline active:text-green-700">
+    <a href="contact.html">Contact</a>
+  </li>
+  <li class="mx-2 hover:underline active:text-green-700">
+    <a href="cart.html">
+      <div class="  relative" >
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="-top-3 inset-x-4 absolute text-red-600"><h1>3</h1></div>
+       </div>
+    </a>
+ 
+  </li>
+</ul>
+   
+      </nav>
+    </header>
+    
+    
+    <section>
+        <div class="m-12 flex flex-col  md:flex md:flex-row items-start justify-center" >
+   <div class="md:flex md:flex-col">
+        <div class=" mt-12 ms-12 me-12 flex flex-col  hover:cursor-pointer ">
+            <img class="hover:shadow-2xl"  id="MainImage"  src="img/products/f1.jpg" alt="products Image">
+        
+          
+          </div>
+    <div class="mt-3 ms-12 me-12 space-x-2  flex flex-row ">
+        
+<div class="hover:cursor-pointer " >
+  <img class="md:w-96  hover:shadow-2xl smallimg"  src="img/products/f1.jpg" alt="products Image">
+ 
+
+</div>
+    
+     <div class="   hover:cursor-pointer " >
+       <img class=" md:w-96  hover:shadow-2xl smallimg" src="img/products/f2.jpg" alt="products Image">
+      
+       </div>
+   
+     
+     <div class="   hover:cursor-pointer " >
+       <img class="md:w-96  hover:shadow-2xl smallimg" src="img/products/f3.jpg" alt="products Image">
+     
+       </div>
+         
+     <div class="   hover:cursor-pointer " >
+       <img class="md:w-96  hover:shadow-2xl smallimg" src="img/products/f4.jpg" alt="products Image">
+     
+       </div>       
+             
+             </div>
+            </div>
+            <div class="mt-12 md:p-12  flex flex-col">
+                <div class="mx-10 flex flex-col gap-4">
+            <h6 class="text-lg text-black font-bold">Home/T-shirt</h6>
+            <h2 class="md:text-5xl text-3xl text-black font-bold">Men's Fashinon T Shirt</h2>
+            <h2 class="md:text-5xl text-3xl text-black font-bold">$139.00</h2>
+        
+             <!--For  Finding the right size -->
+           
+    <select  class=" w-32 border-2 border-blue-500" id="size" name="size">
+    <option value="null">Select the size</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="xl">XL</option>
+    <option value="xxl">XXL</option>
+</select>
+  </div>
+  <span class="mx-10 mt-2  flex flex-col 
+   sm:flex sm:flex-row space-x-2">
+    <!--This is for the number of tshirt you are add in -->
+    <input class=" mb-3 md:mb-0 w-24 border-2 border-gray-600 "  type="number" id="lname" name="lname " min="0" max="5">
+<button class=" w-32 bg-emerald-800 hover:bg-emerald-600 rounded text-white text-lg "><a href="#">Add To Cart</a></button>
+  </span>
+<div class="m-10 flex flex-col gap-4">
+<h1 class="text-2xl font-bold">Product Details</h1>
+<p class="text-gray-600 indent-4 md:me-3 text-md">They are typically made of cotton textile in a stockinette or jersey knit,
+     which has a distinctively pliable texture compared to shirts made of woven cloth.
+      Some modern versions have a body made from a continuously knitted tube,
+       produced on a circular knitting machine, such that the torso has no side seams.</p>
+    </div>
+</div>
+    </div>
+    
+
+  
+</section>
+   <section>
+      <h1 class=" text-transparent bg-gradient-to-r from-indigo-500 via-purple-500  text-center font-bold text-6xl mb-3 mt-16 bg-clip-text ">Featured Products</h1> 
+  <h3 class="text-xl text-gray-400 text-center">Summer Collection New Modern Clean Design</h3></div>
+ 
+         
+      
+        <div class="m-12 flex flex-col  space-x-4 md:flex md:flex-row  pb-12  mb-12 ">
+         <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+           <img src="img/products/n5.jpg" alt="products Image">
+           <span><h6>addias</h6></span>
+           
+           
+           <div class="flex items-center justify-start ">
+           <div class="  flex flex-col  ">
+             <h4>Cartoon Astronaut  T-shirts </h4> 
+             <span>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+            </span>
+             <h5 class="text-emerald-400">$78</h5>
+           </div>
+           <div class=" p-3">
+            <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+             
+           </div>
+         </div>
+         
+         </div>
+              
+               <div class=" p-5 border rounded border-b-2  hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n6.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+               
+               <div class=" p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n7.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+               
+               <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n8.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full bg-emerald-50 hover:50200 p-3"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+                    </div>
+                    
+                     
+      <!--md:flex md:flex-row flex flex-col justify-center it md:justify-between flex-wrap -->  
+ </section>
+
+<section class="bg-blue-950  bg-[url('img/banner/b14.jpg')] ">
+    <div class=" m-12 p-16  md:p-24   md:flex md:flex-row md:justify-between md:items-center flex flex-col  justify-center items-center">
+    <div class="mb-6">
+      <h3 class="text-4xl mb-3 text-white font-bold">Sign Up For Newsletters</h3>
+      <p class="text-xl text-gray-400">Get E-mail updates about our latest shop and <span class="text-orange-400">special offer</span></p>
+    </div>
+    <div class="flex flex-row" >
+      
+      <input class="border-none p-3 " type="email" name="mail" id="eamil" placeholder="xyz@gmail.com">
+      <button class="p-3   text-white  bg-green-400  rounded-r-lg"><a href="#">Sign Up</a></button>
+    
+    </div>
+  </div>
+   </section>
+   <footer>
+    <div  class="flex flex-row justify-between m-12 flex-wrap">
+    <div class="flex flex-col">
+      <a class="mb-6" href="#"><img src="img/logo.png" alt="logo"></a>
+      <h1 class="font-bold ">Contact</h1>
+      <h6 class="font-semi-bold">Address: <span class="text-gray-400"> Lakkhi Bagh, Dehradun, Uttarakhand 248001</span></h6>
+      <h6  class="font-semi-bold">Phone: <span class="text-gray-400">+916397108037/(+9181262448365)</span></h6>
+      <h6 class="font-semi-bold">Hours: <span class="text-gray-400">10:00 - 18:00 Mon-Sat</span></h6>
+      <h5  class="font-semi-bold">Follows Us</h5>
+      <div class="flex flex-row space-x-2">
+        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="flex flex-col ">
+     <h6 class="font-bold mb-6 " >About</h6>
+     <a class="text-gray-400" href="">About Us </A></a>
+     <a class="text-gray-400" href=""> Delievery Information</a>
+     <a class="text-gray-400" href="">Privacy policy</a>
+     <a class="text-gray-400" href="">Terms & Coditions</a>
+     <a class="text-gray-400" href=""> Contact Us</a>
+    </div>
+    <div class="flex flex-col">
+     <h6 class="font-bold mb-6 ">My Account</h6>
+     <a class="text-gray-400" href="">sign In </A></a>
+     <a class="text-gray-400" href="">View Cart</a>
+     <a class="text-gray-400"  href="">My Whislist</a>
+     <a class="text-gray-400" href="">Track My Order</a>
+     <a class="text-gray-400" href=""> Help</a>
+    </div>
+    <div class="flex flex-col">
+     <h6 class="font-bold mb-6 ">Install App</h6>
+     <h6>From App Store Google play</h6>
+     <div class="flex ">
+     <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/app.jpg" alt="App store"> </a>
+     <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/play.jpg" alt="Play store"> </a>
+    </div>
+    <h6 class="mt-3" >Secured Payment GateWays</h6>
+     <a class="mt-3" href=""><img src="img/pay/pay.png" alt=""></a>
+     
+    </div>
+    
+  </div>
+  <div class="flex items-center justify-center"><h6>© 2023 The Clean Style - Ecoomerce Website </h6></div>
+  </footer>
+  <!--This is the logic for the shift the image from one to another-->
+ <!--In this we are change the image source-->
+ <script>
+    let big_img = document.getElementById('MainImage');
+    let small_img = document.getElementsByClassName('smallimg');
+small_img[0].onclick = function()
+{
+    MainImage.src = small_img[0].src;
+}
+small_img[1].onclick = function()
+{
+    MainImage.src = small_img[1].src;
+}
+small_img[2].onclick = function()
+{
+    MainImage.src = small_img[2].src;
+}
+small_img[3].onclick = function()
+{
+    MainImage.src = small_img[3].src;
+}
+  </script>
+</body>
+</html>
