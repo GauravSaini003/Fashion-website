@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Style Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/47c611b96c.js"></script>
+    <script src="functions.js" defer></script>
+  </head>
+  <body class="font-serif">
+    <header
+      class="border-b-2 border-gray-300 shadow-xl sticky inset-y-0 inset-x-0 w-full bg-slate-200 flex items-center justify-between px-4
+       md:px-12 h-24 relative fixed top-0 left-0"
+    >
+      <a href="#"><img class="h-10" src="img\logo.png" alt="logo" /></a>
+      <nav>
+        <!-- Button to toggle the navigation list on smaller screens -->
+<button class="md:hidden" id="toggleBtn">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+</button>
+
+
+<!-- Navigation list -->
+
+<ul class="fixed left-0 right-0 top-0 min-h-screen space-y-4 p-4 transform translate-x-full bg-white 
+md:relative md:flex md:translate-x-0 md:space-y-0 md:min-h-0 md:bg-transparent" id="navList">
+ 
+    <!-- Button to close the navigation list -->
+<button class="md:hidden hidden" id="closeBtn">
+  <i class="fa fa-times" aria-hidden="true"></i>
+</button>
+
+  <li  class=" mx-2 text-lg active:text-green-700 font-semibold hover:underline">
+    <a href="index.html">Home</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="shop.html">Shop</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="blog.html">Blog</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="about.html">About</a>
+  </li>
+  <li class="mx-2  text-lg font-semibold active:text-green-700 hover:underline">
+    <a href="contact.html">Contact</a>
+  </li>
+  <li class="mx-2  hover:underline active:underline">
+    <a href="cart.html">
+      <!-- <i class="fa-sharp fa-solid fa-bag-shopping"></i> -->
+      <div class="  relative" >
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="-top-3 inset-x-4 absolute text-red-600"><h1>3</h1></div>
+       </div>
+    </a>
+ 
+  </li>
+</ul>
+   
+      </nav>
+    </header>
+
+    <section
+      class="w-full   bg-[center_right_-12rem]  md:w-full md:bg-top bg-cover md:min-h-screen  bg-[url('img/hero4.png')]"
+    >
+      <div
+        class="mx-6 py-32 flex flex-col px-3 justify-center content-center md:mx-24 md:py-52"
+      >
+        <h4 class="m-3 text-2xl md:text-4xl font-bold">Trade-in-offer</h4>
+        <h1 class="m-3 text-3xl md:text-6xl font-bold">Super Value Deals</h1>
+        <h1 class="m-3 text-4xl md:text-4xl font-bold text-emerald-400">
+          On all products
+        </h1>
+        <h5 class="m-3 text-base md:text-xl font-bold text-gray-400">
+          save more with coupons up to 70% off
+        </h5>
+        <button
+          class="bg-[url('img/button.png')] bg-no-repeat h-12 w-52 text-emerald-900 font-bold md:text-xl md:m-3"
+        >
+          <a href="shop.html">Shop Now</a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col justify-center items-center sm:flex sm:flex-row sm:flex-wrap sm:justify-between space-y-12 m-16 p-4"
+      id="feature"
+    >
+      <div class="border p-5 border-white shadow-md">
+        <img class="pt-16 p-1" src="img/features/f1.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-green-100">Free shipping</h3>
+      </div>
+
+      <div class="border p-5 border-white shadow-md">
+        <img class="pb-2 p-1" src="img/features/f2.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-purple-100">Online Order</h3>
+      </div>
+
+      <div class="border p-5 border-white shadow-md">
+        <img class="pb-2 p-1" src="img/features/f3.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-yellow-100">Save Money</h3>
+      </div>
+
+      <div class="border p-5 border-white shadow-md">
+        <img class="pb-2 p-1" src="img/features/f4.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-orange-100">Promotions</h3>
+      </div>
+
+      <div class="p-5 border border-white shadow-md">
+        <img class="pb-2 p-1" src="img/features/f5.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-green-100">Happy Sell</h3>
+      </div>
+
+      <div class="border p-5 border-white shadow-md">
+        <img class="pb-2 p-1" src="img/features/f6.png" alt="Featured image" />
+        <h3 class="pb-1 text-center bg-cyan-100">F27/7 Support</h3>
+      </div>
+      <div class=" sm:grow-0 grow "></div>
+      
+      <div class=" sm:grow-0 grow "></div>
+        <div class=" sm:grow-0 grow "></div>
+
+      
+    </section>
+    <section>
+         <h1 class=" text-transparent bg-gradient-to-r from-indigo-500 via-purple-500  text-center font-bold text-6xl mb-3  bg-clip-text ">Featured products</h1> 
+     <h3 class="text-xl text-gray-400 text-center">Summer Collection New Modern Clean Design</h3></div>
+     <div class="m-12 flex flex-col  space-x-4 md:flex md:flex-row  mb-12  ">
+<!--First Cart Item-->
+      <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer ">
+  <a href="singleProduct.html"><img src="img/products/f1.jpg" alt="products Image"></a> 
+  <span><h6>addias</h6></span>
+  
+  
+  <div class="flex items-center justify-start ">
+  <div class="  flex flex-col   ">
+    <h4>Cartoon Astronaut  T-shirts </h4> 
+    <span>
+    <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+    <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+    <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+    <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+    <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+   </span>
+    <h5 class="text-emerald-400">$78</h5>
+  </div>
+  <div class=" p-3">
+   <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+    
+  </div>
+</div>
+
+</div>
+     
+      <div class=" p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer ">
+       <a href="singleProduct.html"><img src="img/products/f2.jpg" alt="products Image"></a> 
+        <span><h6>addias</h6></span>
+        
+        
+        <div class="flex items-center justify-start ">
+        <div class="  flex flex-col  ">
+          <h4>Cartoon Astronaut  T-shirts </h4> 
+          <span>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+         </span>
+          <h5 class="text-emerald-400">$78</h5>
+        </div>
+        <div class=" p-3">
+         <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+          
+        </div>
+      </div>
+      
+      </div>
+      
+      <div class=" p-5 border rounded border-b-2  hover:shadow-2xl hover:cursor-pointer">
+       <a href="singleProduct.html"> <img src="img/products/f3.jpg" alt="products Image"></a>
+        <span><h6>addias</h6></span>
+        
+        
+        <div class="flex items-center justify-start ">
+        <div class="  flex flex-col  ">
+          <h4>Cartoon Astronaut  T-shirts </h4> 
+          <span>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+         </span>
+          <h5 class="text-emerald-400">$78</h5>
+        </div>
+        <div class=" p-3">
+         <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+          
+        </div>
+      </div>
+      
+      </div>
+      
+      <div class="  p-5 border rounded border-b-2 hover:shadow-2xl  hover:cursor-pointer">
+       <a href="singleProduct.html"><img src="img/products/f4.jpg" alt="products Image"></a> 
+        <span><h6>addias</h6></span>
+        
+        
+        <div class="flex items-center justify-start ">
+        <div class="  flex flex-col  ">
+          <h4>Cartoon Astronaut  T-shirts </h4> 
+          <span>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+          <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+         </span>
+          <h5 class="text-emerald-400">$78</h5>
+        </div>
+        <div class=" p-3">
+         <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+          
+        </div>
+      </div>
+      
+      </div>
+           </div>
+            
+         
+           <div class="m-12 flex flex-col  space-x-4 md:flex md:flex-row  pb-12  mb-12 ">
+            <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+            <img src="img/products/f5.jpg" alt="products Image">
+              <span><h6>addias</h6></span>
+              
+              
+              <div class="flex items-center justify-start ">
+              <div class="  flex flex-col  ">
+                <h4>Cartoon Astronaut  T-shirts </h4> 
+                <span>
+                <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+               </span>
+                <h5 class="text-emerald-400">$78</h5>
+              </div>
+              <div class=" p-3">
+               <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                
+              </div>
+            </div>
+            
+            </div>
+                 
+                  <div class=" p-5 border rounded border-b-2  hover:shadow-2xl hover:cursor-pointer">
+                    <img src="img/products/f6.jpg" alt="products Image">
+                    <span><h6>addias</h6></span>
+                    
+                    
+                    <div class="flex items-center justify-start ">
+                    <div class="  flex flex-col  ">
+                      <h4>Cartoon Astronaut  T-shirts </h4> 
+                      <span>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                     </span>
+                      <h5 class="text-emerald-400">$78</h5>
+                    </div>
+                    <div class=" p-3">
+                     <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                      
+                    </div>
+                  </div>
+                  
+                  </div>
+                  
+                  <div class=" p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                    <img src="img/products/f7.jpg" alt="products Image">
+                    <span><h6>addias</h6></span>
+                    
+                    
+                    <div class="flex items-center justify-start ">
+                    <div class="  flex flex-col  ">
+                      <h4>Cartoon Astronaut  T-shirts </h4> 
+                      <span>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                     </span>
+                      <h5 class="text-emerald-400">$78</h5>
+                    </div>
+                    <div class=" p-3">
+                     <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                      
+                    </div>
+                  </div>
+                  
+                  </div>
+                  
+                  <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                    <img src="img/products/f8.jpg" alt="products Image">
+                    <span><h6>addias</h6></span>
+                    
+                    
+                    <div class="flex items-center justify-start ">
+                    <div class="  flex flex-col  ">
+                      <h4>Cartoon Astronaut  T-shirts </h4> 
+                      <span>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                      <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                     </span>
+                      <h5 class="text-emerald-400">$78</h5>
+                    </div>
+                    <div class=" p-3">
+                     <button class="rounded-full bg-emerald-50 hover:50200 p-3"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                      
+                    </div>
+                  </div>
+                  
+                  </div>
+                       </div>
+                       
+                        
+           
+    </section>
+    <section class="bg-[url('img/banner/b2.jpg')] flex flex-col items-center justify-center p-24">
+     
+        <h5 class="text-white font-bold text-3xl p-3">Repair Services</h5>
+        <h2 class="text-white font-bold text-5xl p-3">Up to <span class="text-red-900"> 70% off</span> - All t-shirts & Accessories</h2>
+        <button><a class="text-black font-bold  text-2xl p-3 hover:bg-gray-300 hover:cursor-pointer   rounded  bg-white
+
+          " href="#">Explore More</a></button>
+     
+    </section>
+
+    <section>
+      <h1 class=" text-transparent bg-gradient-to-r from-indigo-500 via-purple-500  text-center font-bold text-6xl mb-3 mt-16 bg-clip-text ">New Arrivals</h1> 
+  <h3 class="text-xl text-gray-400 text-center">Summer Collection New Modern Clean Design</h3></div>
+  <div class="m-12 flex flex-col  space-x-4 md:flex md:flex-row  mb-12  ">
+<div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer ">
+<img src="img/products/n1.jpg" alt="products Image">
+<span><h6>addias</h6></span>
+
+
+<div class="   flex items-center justify-start ">
+ 
+<div class=" mt-24 flex flex-col   ">
+ <h4 >Cartoon Astronaut  T-shirts </h4> 
+ <span>
+ <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+ <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+ <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+ <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+ <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+</span>
+ <h5 class="text-emerald-400">$78</h5>
+</div>
+<div class=" p-3">
+<button class="mt-24 rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+ 
+</div>
+</div>
+
+</div>
+  
+   <div class=" p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer ">
+     <img src="img/products/n2.jpg" alt="products Image">
+     <span><h6>addias</h6></span>
+     
+     
+     <div class="flex items-center justify-start ">
+     <div class="  flex flex-col  ">
+       <h4>Cartoon Astronaut  T-shirts </h4> 
+       <span>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+      </span>
+       <h5 class="text-emerald-400">$78</h5>
+     </div>
+     <div class=" p-3">
+      <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+       
+     </div>
+   </div>
+   
+   </div>
+   
+   <div class=" p-5 border rounded border-b-2  hover:shadow-2xl hover:cursor-pointer">
+     <img src="img/products/n3.jpg" alt="products Image">
+     <span><h6>addias</h6></span>
+     
+     
+     <div class="flex items-center justify-start ">
+     <div class="  flex flex-col  ">
+       <h4>Cartoon Astronaut  T-shirts </h4> 
+       <span>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+      </span>
+       <h5 class="text-emerald-400">$78</h5>
+     </div>
+     <div class=" p-3">
+      <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+       
+     </div>
+   </div>
+   
+   </div>
+   
+   <div class="  p-5 border rounded border-b-2 hover:shadow-2xl  hover:cursor-pointer">
+     <img src="img/products/n4.jpg" alt="products Image">
+     <span><h6>addias</h6></span>
+     
+     
+     <div class="flex items-center justify-start ">
+     <div class="  flex flex-col  ">
+       <h4>Cartoon Astronaut  T-shirts </h4> 
+       <span>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+       <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+      </span>
+       <h5 class="text-emerald-400">$78</h5>
+     </div>
+     <div class=" p-3">
+      <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+       
+     </div>
+   </div>
+   
+   </div>
+        </div>
+         
+      
+        <div class="m-12 flex flex-col  space-x-4 md:flex md:flex-row  pb-12  mb-12 ">
+         <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+           <img src="img/products/n5.jpg" alt="products Image">
+           <span><h6>addias</h6></span>
+           
+           
+           <div class="flex items-center justify-start ">
+           <div class="  flex flex-col  ">
+             <h4>Cartoon Astronaut  T-shirts </h4> 
+             <span>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+             <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+            </span>
+             <h5 class="text-emerald-400">$78</h5>
+           </div>
+           <div class=" p-3">
+            <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+             
+           </div>
+         </div>
+         
+         </div>
+              
+               <div class=" p-5 border rounded border-b-2  hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n6.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+               
+               <div class=" p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n7.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full 50100 hover:50200 p-3 bg-emerald-50"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+               
+               <div class="  p-5 border rounded border-b-2 hover:shadow-2xl hover:cursor-pointer">
+                 <img src="img/products/n8.jpg" alt="products Image">
+                 <span><h6>addias</h6></span>
+                 
+                 
+                 <div class="flex items-center justify-start ">
+                 <div class="  flex flex-col  ">
+                   <h4>Cartoon Astronaut  T-shirts </h4> 
+                   <span>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star " style="color: #fdcc0d;"></i>
+                   <i class="fa-solid fa-star-half-stroke " style="color: #fdcc0d;"></i>
+                  </span>
+                   <h5 class="text-emerald-400">$78</h5>
+                 </div>
+                 <div class=" p-3">
+                  <button class="rounded-full bg-emerald-50 hover:50200 p-3"> <a href="#"><i class="fa-solid fa-cart-shopping "></i></a></i></button>
+                   
+                 </div>
+               </div>
+               
+               </div>
+                    </div>
+                    
+                     
+      <!--md:flex md:flex-row flex flex-col justify-center it md:justify-between flex-wrap -->  
+ </section>
+ <section>
+<div class="m-12 flex flex-col gap-3  items-center justify-center  md:m-12 md:flex md:flex-row md:justify-between md:flex-wrap
+          ">
+  
+  <div  style=" min-width:280px;   height:50vh; background-position: center; background-size:centre;"
+  class="  bg-[url('img/banner/b17.jpg')] bg-cover bg-no-repeat ">
+<div 
+class="mt-24 p-6 md:me-32">
+  
+<h5 class="md:text-2xl mb-2 text-white" >Crazy Deals</h5>
+<h2 class="md:text-2xl mb-2 text-white">buy 1 get 1 Free</h2>
+<h6 class="md:text-2xl mb-2 text-white">The best dress is on sale at cara</h6>
+<button class="border border-2 border-white text-white p-2 font-bold hover:bg-blue-500 hover:shadow-2xl  "><a href="#">Learn More</a></button>
+</div>
+</div>
+<div style="min-width:280px; height:50vh; background-position: center; background-size:centre;"
+class="bg-[url('img/banner/b10.jpg')] bg-no-repeat bg-cover">
+<div  
+class="mt-24 p-6 ">
+  
+<h5 class="md:text-2xl mb-2 text-white" >Crazy Deals</h5>
+<h2 class="md:text-2xl mb-2 text-white">buy 1 get 1 Free</h2>
+<h6 class="md:text-2xl mb-2 text-white">The best dress is on sale at cara</h6>
+<button class="border border-2 border-white text-white p-2 font-bold hover:bg-blue-500 hover:shadow-2xl   "><a href="#">Learn More</a></button>
+</div>
+</div>
+<div  style=" min-width:280px;   height:50vh; background-position: center; background-size:centre;"
+  class="bg-[url('img/blog/b7.jpg')] bg-cover bg-no-repeat  ">
+<div 
+class="mt-24 p-6 md:me-32  ">
+  
+<h5 class="md:text-2xl mb-2 text-white" >Crazy Deals</h5>
+<h2 class="md:text-2xl mb-2 text-white">buy 1 get 1 Free</h2>
+<h6 class="md:text-2xl mb-2 text-white">The best dress is on sale at cara</h6>
+<button class="border border-2 border-white text-white p-2 font-bold hover:bg-blue-500 hover:shadow-2xl  "><a href="#">Learn More</a></button>
+</div>
+</div>
+
+
+</div>
+<div class=" m-12 items-center justify-center  md:m-12 md:flex  md:flex-row md:gap-4 flex flex-col gap-4 md:flex-wrap">
+  
+  
+  <div 
+  class="grow  bg-[url('img/banner/b7.jpg')] bg-cover bg-no-repeat  pt-24 p-8     ">
+    
+  <h5  style=" background-position: center; background-size:centre;"
+  class="text-4xl mb-3 font-bold text-white" >SEASONAL SALE</h5>
+ 
+  <h6 class="text-2xl mb-2 text-red-900">Winter Collection  -50% off</h6>
+ 
+  
+  </div>
+  <div style=" background-position: center; background-size:centre;"
+   class=" grow   bg-[url('img/banner/b4.jpg')] bg-cover  bg-no-repeat  pt-24 p-8    ">
+    
+    <h5  
+    class="text-4xl mb-3 font-bold text-white " >NEW FOOTWEAR <br>COLLECTION</h5>
+ 
+    <h6 class="text-2xl mb-2 text-red-900">spring / Summer 2022</h6>
+ 
+  
+    </div>
+    <div style=" background-position: center; background-size:centre; "
+    class=" grow  bg-[url('img/banner/b18.jpg')]  bg-cover bg-no-repeat  pt-24 p-8  items-center justify-start ">
+    
+      <h5 class="text-4xl mb-3 font-bold text-white" >T-SHIRTS</h5>
+      <h6 class="text-2xl ml-6 mr-6 mb-4 text-red-900">New Trendy prints</h6>
+      
+      
+      
+        </div>
+  
+  </div>
+ </section>
+ <section class="bg-blue-950  bg-[url('img/banner/b14.jpg')] ">
+  <div class=" m-12 p-16  md:p-24   md:flex md:flex-row md:justify-between md:items-center flex flex-col  justify-center items-center">
+  <div class="mb-6">
+    <h3 class="text-4xl mb-3 text-white font-bold">Sign Up For Newsletters</h3>
+    <p class="text-xl text-gray-400">Get E-mail updates about our latest shop and <span class="text-orange-400">special offer</span></p>
+  </div>
+  <div class="flex flex-row" >
+    
+    <input class="border-none p-3 " type="email" name="mail" id="eamil" placeholder="xyz@gmail.com">
+    <button class="p-3   text-white  bg-green-400  rounded-r-lg"><a href="#">Sign Up</a></button>
+  
+  </div>
+</div>
+ </section>
+ <footer>
+  <div  class="flex flex-row justify-between m-12 flex-wrap">
+  <div class="flex flex-col">
+    <a class="mb-6" href="#"><img src="img/logo.png" alt="logo"></a>
+    <h1 class="font-bold ">Contact</h1>
+    <h6 class="font-semi-bold">Address: <span class="text-gray-400"> Lakkhi Bagh, Dehradun, Uttarakhand 248001</span></h6>
+    <h6  class="font-semi-bold">Phone: <span class="text-gray-400">+916397108037/(+9181262448365)</span></h6>
+    <h6 class="font-semi-bold">Hours: <span class="text-gray-400">10:00 - 18:00 Mon-Sat</span></h6>
+    <h5  class="font-semi-bold">Follows Us</h5>
+    <div class="flex flex-row space-x-2">
+      <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="flex flex-col ">
+   <h6 class="font-bold mb-6 " >About</h6>
+   <a class="text-gray-400" href="">About Us </A></a>
+   <a class="text-gray-400" href=""> Delievery Information</a>
+   <a class="text-gray-400" href="">Privacy policy</a>
+   <a class="text-gray-400" href="">Terms & Coditions</a>
+   <a class="text-gray-400" href=""> Contact Us</a>
+  </div>
+  <div class="flex flex-col">
+   <h6 class="font-bold mb-6 ">My Account</h6>
+   <a class="text-gray-400" href="">sign In </A></a>
+   <a class="text-gray-400" href="">View Cart</a>
+   <a class="text-gray-400"  href="">My Whislist</a>
+   <a class="text-gray-400" href="">Track My Order</a>
+   <a class="text-gray-400" href=""> Help</a>
+  </div>
+  <div class="flex flex-col">
+   <h6 class="font-bold mb-6 ">Install App</h6>
+   <h6>From App Store Google play</h6>
+   <div class="flex ">
+   <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/app.jpg" alt="App store"> </a>
+   <a class="border-2 border-gray-100 hover:border-blue-500" href=""><img src="img/pay/play.jpg" alt="Play store"> </a>
+  </div>
+  <h6 class="mt-3" >Secured Payment GateWays</h6>
+   <a class="mt-3" href=""><img src="img/pay/pay.png" alt=""></a>
+   
+  </div>
+  
+</div>
+<div class="flex items-center justify-center"><h6>© 2023 The Clean Style - Ecoomerce Website </h6></div>
+</footer>
+   
+  </body>
+</html>
